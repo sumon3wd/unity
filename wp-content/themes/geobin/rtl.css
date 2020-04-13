@@ -1,0 +1,296 @@
+/**
+* Theme Name: geobin | Shared by VestaThemes.com
+* Theme URI: http://demo.themewinter.com/wp/geobin/
+* Description: Geobin is a powerful and modern responsive WordPress Theme for 'Search Engine Optimization' and 'Digital Marketing'. Even  you can use for 'Social Media Marketing'.
+* Version: 2.0
+* Author: Themewinter
+* Author URI: http://www.themewinter.com
+* License: GNU General Public License version 3.0
+* License URI: http://www.gnu.org/licenses/gpl-3.0.html
+* Tags: one-column, right-sidebar, left-sidebar, custom-menu, featured-images, post-formats, sticky-post, translation-ready
+* Text Domain: geobin
+*
+*/
+
+
+body{
+    direction:rtl;
+    unicode-bidi:embed;
+}
+
+.float-left {
+    float: right !important;
+}
+
+/* Off canvas */
+
+.offcanvas-wrapper.active{
+    left:0;
+    right:auto;
+}
+
+.offcanvas-menu .menu-subscribe{
+    text-align: right;
+}
+
+/* Top bar */
+
+.tw-top-bar .text-left {
+    text-align: right!important;
+}
+
+.tw-top-bar .text-right {
+    text-align: left !important;
+}
+
+.tw-top-bar .text-left .top-contact-info span {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* Header */
+
+@media (min-width: 992px){
+    ul.main-menu>li.menu-item-has-children>a:after{
+        left: -7px;
+        right: auto;
+    }
+}
+
+.main-menu>li>a:before{
+    right: 0;
+    left: auto;
+}
+
+.mega-menu:after{
+    background: url(assets/images/mega_menu/mega_menu_rtl.png) no-repeat;
+    left: 0;
+    right: auto;
+}
+ 
+
+
+/* Animated border */
+
+.animate-border.mr-auto.ml-auto{
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.animate-border:after{
+    animation-direction: alternate;
+}
+
+.owl-carousel {
+    direction: ltr
+}
+
+
+/* Menu */
+
+.navbar-nav.main-menu>li>a, .navbar-nav.main-menu>ul>li>a,
+.main-menu>li.menu-item-has-children .sub-menu li a{
+    text-align: right;
+}
+
+.menu-indicator{
+    left:0;
+    right:auto;
+}
+
+/* Read more arrow */
+
+.tw-readmore i:before{
+    content: "\f104";
+}
+
+/* Latest news */
+
+.post-body{
+    padding-right: 20px;
+    padding-left: 0;
+}
+
+.post-info{
+    margin-right: 80px;
+    margin-left: auto;
+}
+
+/* Footer */
+
+.tw-footer-info-box{
+    text-align: right;
+}
+
+.tw-footer .contact-us .contact-info {
+    margin-right: 50px;
+    margin-left: 0;
+}
+
+.tw-footer .contact-us,
+.footer-left-widget{
+    padding-left: 0;
+    padding-right: 80px;
+}
+
+.mc4wp-form-fields input[type=email]{
+    text-align: left;
+}
+
+.copyright-menu ul{
+    text-align: left;
+}
+
+.copyright{
+    text-align: right;
+}
+
+/* Off canvas */
+
+.offcanvas-inner .contact-info{
+    margin-right: 75px;
+    margin-left: 0;
+}
+
+/* Pricing */
+
+.pricing-tab ul.nav{
+    padding-right: 0;
+}
+
+
+/* News */
+
+.tw-latest-post .post-info {
+    margin-right: 40px;
+    margin-left: 40px;
+}
+
+
+/* News page */
+
+.sidebar .widget.widget_search .input-group span i{
+    left:25px;
+    right:auto;
+}
+
+
+.sidebar .tagcloud,
+.sidebar .widget-title,
+.sidebar .widget ul li{
+    text-align: right;
+}
+
+
+.xs-recent-post-widget .entry-title{
+    margin-right: 80px;
+    margin-left:auto;
+}
+
+
+.post .post-body{
+    padding-right: 0;
+}
+
+
+.entry-header,
+.post .entry-content{
+    margin-left:0;
+    margin-right: 80px;
+    text-align: right;
+}
+
+.post-footer{
+    margin-left:0
+}
+
+.ts-readmore{
+    float:left;
+}
+
+/* Single */
+
+.post-single .entry-content {
+    margin: 0;
+    overflow: hidden;
+}
+
+/* Testimonial */
+
+.tw-testimonial-box .testimonial-bg.testimonial-bg-yellow {
+    right: 30px;
+    left: auto;
+}
+
+.tw-testimonial-box .testimonial-meta {
+    margin-right: 100px;
+    margin-left: auto;
+}
+
+/*  Responsive
+================================================== */
+
+@media (max-width: 991px){
+
+    button.navbar-toggler {
+        right: auto;
+        left:0;
+    }
+    ul.navbar-nav.main-menu>li{
+        text-align: right;
+    }
+}
+
+
+
+/* Small Devices, Tablets */
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .tw-top-bar .text-left .top-contact-info span{
+        padding-left: 40px;
+        padding-right: 0;
+    }
+
+    .footer-widget ul{
+        float: right;
+        text-align: right
+    }
+
+    .tw-footer .contact-us, 
+    .footer-left-widget{
+        padding-right: 0;
+    }
+
+    .xs-recent-post-widget .entry-title{
+        margin-right: 0;
+        display: inline-block;
+    }
+
+    .w-25 {
+        width: 100%!important;
+    }
+
+}
+
+
+/* Small Devices Potrait */
+
+@media (max-width: 767px){
+
+    .footer-widget ul{
+        float: right;
+        text-align: right
+    }
+
+    .tw-footer .contact-us, 
+    .footer-left-widget{
+        padding-right: 0;
+    }
+
+    .entry-header, .post .entry-content {
+        margin-right: 0;
+    }
+
+
+}
